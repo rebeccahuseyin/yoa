@@ -1,0 +1,13 @@
+<div
+  [appGenerateSuggestion]="category"
+  class="text-white fade-in"
+  (suggestionGenerated)="onSuggestionGenerated($event)"
+>
+  <a [href]="suggestion" class="row justify-content-md-center py-5">{{
+    suggestion
+  }}</a>
+  <div class="align-self-end mr-3">
+    <fa-icon [icon]="faArrowLeft" class="fa-lg"></fa-icon>
+    <span class="px-2">BACK</span>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<p class="text-center text-light font-weight-light">
+  Hello! What are you looking for out of your practice today?
+</p>
+<div class="row justify-content-md-center">
+  <div
+    *ngFor="let category of categories"
+    class="card col-sm-2 text-white border-0 bg-transparent"
+    (click)="onSelectCategory(category.name)"
+  >
+    <img [src]="category.image" class="card-img" [alt]="category.description" />
+    <div class="card-footer p-2">
+      <p class="text-white m-0 font-weight-light">
+        {{ category.name }}
+      </p>
+    </div>
+  </div>
+</div>

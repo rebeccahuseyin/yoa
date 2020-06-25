@@ -1,0 +1,10 @@
+<div appGradientBackground class="m-5">
+  <h1 id="app-title" class="text-center text-light">Yoa</h1>
+  <app-select-category
+    *ngIf="!category"
+    (categoryChosen)="onCategoryChosen($event)"
+  >
+  </app-select-category>
+  <app-video-suggestion *ngIf="!!category" [chosenCategory]="category">
+  </app-video-suggestion>
+</div>
