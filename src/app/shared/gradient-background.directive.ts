@@ -10,7 +10,7 @@ export class GradientBackground implements AfterViewInit {
     this.renderer.setStyle(
       this.elfRef.nativeElement.ownerDocument.body,
       'background',
-      'linear-gradient(to bottom, #66CCCC, #66CC99'
+      'linear-gradient(to bottom, #66CCCC, #66FF99'
     )
     this.renderer.setStyle(
       this.elfRef.nativeElement.ownerDocument.body,
