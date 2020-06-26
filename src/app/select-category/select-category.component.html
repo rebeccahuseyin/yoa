@@ -1,6 +1,6 @@
-<p class="text-center text-light font-weight-light">
+<h2 class="text-center text-light font-weight-light ques">
   What are you looking for out of your practice today?
-</p>
+</h2>
 <div class="row justify-content-md-center">
   <div
     *ngFor="let category of categories"
@@ -9,7 +9,7 @@
   >
     <img [src]="category.image" class="card-img" [alt]="category.description" />
     <div class="card-footer p-2">
-      <p class="text-white m-0 font-weight-light">
+      <p class="text-white m-0 font-weight-light card-text">
         {{ category.name }}
       </p>
     </div>
