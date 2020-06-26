@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
@@ -8,6 +8,8 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 })
 export class VideoSuggestion implements OnInit {
   @Input('chosenCategory') category: string
+  @Output() categoryCleared = new EventEmitter<MouseEvent>()
+
   faArrowLeft = faArrowLeft
   suggestion = ''
 
@@ -19,5 +21,9 @@ export class VideoSuggestion implements OnInit {
 
   onSuggestionGenerated(generated: any) {
     this.suggestion = generated
+  }
+
+  onGoBack(event: MouseEvent) {
+    this.categoryCleared.emit(event)
   }
 }

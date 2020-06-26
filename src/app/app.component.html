@@ -5,6 +5,10 @@
     (categoryChosen)="onCategoryChosen($event)"
   >
   </app-select-category>
-  <app-video-suggestion *ngIf="!!category" [chosenCategory]="category">
+  <app-video-suggestion
+    *ngIf="!!category"
+    [chosenCategory]="category"
+    (categoryCleared)="onClearCategory($event)"
+  >
   </app-video-suggestion>
 </div>

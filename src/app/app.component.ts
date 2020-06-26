@@ -11,4 +11,8 @@ export class AppComponent {
   onCategoryChosen(chosenCategory: string) {
     this.category = chosenCategory
   }
+
+  onClearCategory(event: any) {
+    this.category = ''
+  }
 }
