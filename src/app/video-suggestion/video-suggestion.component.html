@@ -1,11 +1,18 @@
 <div
   [appGenerateSuggestion]="category"
-  class="text-white fade-in"
   (suggestionGenerated)="onSuggestionGenerated($event)"
 >
-  <a [href]="suggestion" class="row justify-content-md-center py-5">{{
+  <!-- <a [href]="suggestion" class="row justify-content-md-center py-5">{{
     suggestion
-  }}</a>
+  }}</a> -->
+  <div class="row justify-content-md-center py-5">
+    <youtube-player
+      [videoId]="suggestion"
+      suggestedQuality="highres"
+      [height]="600"
+      [width]="1080"
+    ></youtube-player>
+  </div>
   <div class="align-self-end mr-3">
     <fa-icon [icon]="faArrowLeft" class="fa-lg"></fa-icon>
     <span class="px-2">BACK</span>

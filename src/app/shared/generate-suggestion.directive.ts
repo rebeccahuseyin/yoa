@@ -9,26 +9,10 @@ export class GenerateSuggestion {
   suggestion = ''
   randomCategory
   videos = {
-    Calm: [
-      'https://www.youtube.com/watch?v=Ba0fweKUwIc',
-      'https://www.youtube.com/watch?v=Nw2oBIrQGLo',
-      'https://www.youtube.com/watch?v=Enz98dDXQfY'
-    ],
-    Energize: [
-      'https://www.youtube.com/watch?v=sOthumY3GHE',
-      'https://www.youtube.com/watch?v=A4ViwsLKoSY',
-      'https://www.youtube.com/watch?v=qy_oIKf1ByM'
-    ],
-    Focus: [
-      'https://www.youtube.com/watch?v=Nnd5Slo02us',
-      'https://www.youtube.com/watch?v=3Elmwad8XDI',
-      'https://www.youtube.com/watch?v=MQZbuqDp67U'
-    ],
-    Unwind: [
-      'https://www.youtube.com/watch?v=UxWWfyE3fLc',
-      'https://www.youtube.com/watch?v=-l-viVXMqhs',
-      'https://www.youtube.com/watch?v=DWCyYhczU6M'
-    ]
+    Calm: ['Ba0fweKUwIc', 'Nw2oBIrQGLo', 'Enz98dDXQfY'],
+    Energize: ['sOthumY3GHE', 'A4ViwsLKoSY', 'qy_oIKf1ByM'],
+    Focus: ['Nnd5Slo02us', '3Elmwad8XDI', 'MQZbuqDp67U'],
+    Unwind: ['UxWWfyE3fLc', '-l-viVXMqhs', 'DWCyYhczU6M']
   }
 
   @Input('appGenerateSuggestion') set chosenCategory(chosenCategory: string) {

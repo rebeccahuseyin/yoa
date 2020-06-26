@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
+import { YouTubePlayerModule } from '@angular/youtube-player'
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -17,7 +18,12 @@ import { GenerateSuggestion } from './shared/generate-suggestion.directive'
     VideoSuggestion,
     GenerateSuggestion
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    YouTubePlayerModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
